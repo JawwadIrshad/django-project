@@ -18,5 +18,4 @@ class BookListCreateAPIView(generics.ListCreateAPIView):
 
 
     def get_queryset(self):
-        # 🔹 users only see their own books
-        return self.queryset.filter(owner=self.request.user)
+         return self.queryset.filter(owner=self.request.user)

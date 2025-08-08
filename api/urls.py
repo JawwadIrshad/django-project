@@ -3,7 +3,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from . import views
 from .views import BookListCreateAPIView, BookRetrieveUpdateDestroyAPIView
 
-
 urlpatterns = [
     path('books/',BookListCreateAPIView.as_view(), name='book-list'),
     path('books/<int:pk>/',BookRetrieveUpdateDestroyAPIView.as_view(), name='book-detail'),
