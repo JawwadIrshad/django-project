@@ -104,12 +104,14 @@ AUTH_PASSWORD_VALIDATORS = [
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
-        'rest_framework.renderers.BrowsableAPIRenderer',  # 👈 This enables the web UI
+        'rest_framework.renderers.BrowsableAPIRenderer', 
+          # 👈 This enables the web UI
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',  # ✅ Add this
-        'rest_framework.authentication.SessionAuthentication',  # still allow browser login
-    ],  
+      'rest_framework_simplejwt.authentication.JWTAuthentication',       ],  
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
 }
 
 
