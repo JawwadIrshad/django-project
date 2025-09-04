@@ -15,7 +15,5 @@ class BookListCreateAPIView(generics.ListCreateAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     permission_classes = [IsAuthenticated]
-
-
     def get_queryset(self):
          return self.queryset.filter(owner=self.request.user)
