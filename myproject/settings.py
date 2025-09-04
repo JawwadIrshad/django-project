@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +25,6 @@ SECRET_KEY = 'django-insecure-ag-d*4_&0z=la+ver$!7v5x#a5g1rz%8ie4g@1hy#p#p+$g7^!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -113,8 +111,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
-
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
