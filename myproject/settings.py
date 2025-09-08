@@ -1,3 +1,4 @@
+#setting.py file
 """
 Django settings for myproject project.
 
